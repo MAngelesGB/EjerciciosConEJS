@@ -1,0 +1,26 @@
+<html>
+    <head>
+        <link href = "/assets/style.css" type="text/css" rel="stylesheet" />
+    </head>    
+    <body id="main-container">
+        <div>
+            <table>
+                <tr>
+                    <th>id</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                </tr>
+                <% data.forEach(personas => { %>
+                    <tr>
+                        <td><%= personas.id%></td>
+                        <td><%= personas.nombre%></td>
+                        <td><%= personas.apellido%></td>
+                        <td><%= personas.edad%></td>
+                    </tr>
+            <%});%>
+            </table>
+        </div>
+        
+    </body>
+</html>

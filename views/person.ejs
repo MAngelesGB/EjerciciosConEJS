@@ -1,0 +1,22 @@
+<html>
+    <head>
+        <link href = "/assets/style.css" type="text/css" rel="stylesheet" />
+    </head>    
+    <body>
+        <h2>Hola desde el EJS</h2>
+        <%if((ID%2)=== 0){ %>
+            <h1>El numero <%= ID %> es PAR</h1>
+        <% } 
+        else { %>
+            <h1>El numero <%= ID %> es IMPAR</h1>
+        <% } %>
+        
+        <ul>
+            <% for(let i = 1; i<= ID ; i++) { %>
+                
+                    <li><%= i %></li>
+                
+            <% } %>
+        </ul>
+    </body>
+</html>

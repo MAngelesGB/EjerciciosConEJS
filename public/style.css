@@ -1,0 +1,30 @@
+/*Tipo de letra de body*/
+body {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+/*Estilo para la tabla de personas*/
+#main-container{
+    margin:150px auto;
+    width: 600px;
+}
+
+table {
+    background-color: white;
+    text-align: left;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 20px;
+}
+
+th{
+    background-color: cornflowerblue;
+    border-bottom: solid 2px black;
+    color: white;
+}
+
+tr:nth-child(even){
+    background-color: gainsboro;
+}
